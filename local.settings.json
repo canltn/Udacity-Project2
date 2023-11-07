@@ -1,0 +1,11 @@
+{ "IsEncrypted": false,
+ "Values": { 
+    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=ngoccan;AccountKey=Cn7i/JUkou9fnbPK5uJ6JQkmfr0BlhmH6FQ8squzZJPVOUK6GmTygEVO9mRmgfrlGLNxalwqZCCg+AStrVs2yw==;EndpointSuffix=core.windows.net", 
+    "FUNCTIONS_WORKER_RUNTIME": "python", 
+    "FUNCTIONS_EXTENSION_VERSION": "~4",
+    "WEBSITE_CONTENTAZUREFILECONNECTIONSTRING":"DefaultEndpointsProtocol=https;AccountName=ngoccan;AccountKey=Cn7i/JUkou9fnbPK5uJ6JQkmfr0BlhmH6FQ8squzZJPVOUK6GmTygEVO9mRmgfrlGLNxalwqZCCg+AStrVs2yw==;EndpointSuffix=core.windows.net", 
+    "WEBSITE_CONTENTSHARE":"canltn-app",
+    "MyDbConnection":"mongodb://canltn-db:b6mVJEY2gewUVntJHPNbJbCQySoewpjJJc3Q3L1XXcoFzGl6zP7Cl89lUIHRo0J8IcScxvhR6mvbACDbOHwUXA==@canltn-db.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@canltn-db@" ,
+    "AzureWebJobsFeatureFlags":"EnableWorkerIndexing"
+   }
+ }
