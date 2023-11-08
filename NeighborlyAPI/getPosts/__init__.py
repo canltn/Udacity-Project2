@@ -3,7 +3,7 @@ import azure.functions as func
 import pymongo
 import json
 from bson.json_util import dumps
-
+import os
 
 def main(req: func.HttpRequest) -> func.HttpResponse:
 
@@ -12,7 +12,8 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
     try:
         url = "mongodb://canltn-db:b6mVJEY2gewUVntJHPNbJbCQySoewpjJJc3Q3L1XXcoFzGl6zP7Cl89lUIHRo0J8IcScxvhR6mvbACDbOHwUXA==@canltn-db.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@canltn-db@"  # TODO: Update with appropriate MongoDB connection information
         client = pymongo.MongoClient(url)
-        database = client['canltn-db']
+        db_name = os.environ("MyDatabase")
+        database = client[db_name]
         collection = database['posts']
 
         result = collection.find({})
