@@ -10,10 +10,10 @@ RESTPLUS_MASK_SWAGGER = False
 RESTPLUS_404_HELP = True
 API_VERSION = 'v1'
 
-#-------- Azure constants
+#-------- Azure constantsa
 
 # API_URL format: "https://[FUNCTION_APP_NAME_GOES_HERE].azurewebsites.net"
-API_URL = "https://canltn-app.azurewebsites.net/api/"
+API_URL = "https://canltn-app.azurewebsites.net/api"
 
 # for local host if Azure functions served locally
 #API_URL = "http://localhost:7071/api"

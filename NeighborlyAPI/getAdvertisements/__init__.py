@@ -7,9 +7,9 @@ import os
 def main(req: func.HttpRequest) -> func.HttpResponse:
 
     try:
-        url = "mongodb://canltn-db:b6mVJEY2gewUVntJHPNbJbCQySoewpjJJc3Q3L1XXcoFzGl6zP7Cl89lUIHRo0J8IcScxvhR6mvbACDbOHwUXA==@canltn-db.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@canltn-db@"  # TODO: Update with appropriate MongoDB connection information
+        url = "mongodb://canltncosmosmgdb:I4hiCFq7cMR1OomtZWapFOdFKmulj7mu1Y5YEuDpzg2mIJ8FHAlAtSoOL012A5zgrd1es1R9ytlaACDbS74OYA%3D%3D@canltncosmosmgdb.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@canltncosmosmgdb@" # TODO: Update with appropriate MongoDB connection information
         client = pymongo.MongoClient(url)
-        db_name = os.environ("MyDatabase")
+        db_name ="canltn-db"
         database = client[db_name]
         collection = database['advertisements']
 
